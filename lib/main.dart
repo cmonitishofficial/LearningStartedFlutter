@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: LogInPage(),
       home: HomePage(),
+      debugShowCheckedModeBanner: false,//for remove debug banner
     );
   }
 }
