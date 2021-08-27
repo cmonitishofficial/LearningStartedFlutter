@@ -14,12 +14,16 @@ class LogInPage extends StatelessWidget {
         ),
         Text(
 
-          "Welcome",
-          style: TextStyle(
-            fontSize:30,
-            fontWeight: FontWeight.bold,
-            color: Colors.red[600]
-        ),
+              "Welcome",
+              style: TextStyle
+              (
+                fontSize:30,
+                fontWeight: FontWeight.bold,
+                color: Colors.red[600]
+              ),
+
+              textScaleFactor: 1.5,
+              
         )
       ],
     )

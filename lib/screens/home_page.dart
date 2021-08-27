@@ -16,7 +16,8 @@ class HomePage extends StatelessWidget {
         //  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(360)),
         centerTitle: true,
         title: Text(name),
-        backgroundColor: Colors.teal[900],
+        // backgroundColor: Colors.teal[900],
+        
 
         // actions: <Widget>[
         //   IconButton(
