@@ -12,10 +12,7 @@ class LogInPage extends StatefulWidget {
 class _LogInPageState extends State<LogInPage> {
   String username = "";
   bool changedButton = false;
-  final _formKey=GlobalKey<FormState>();
-
-
-
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -52,9 +49,9 @@ class _LogInPageState extends State<LogInPage> {
                         hintText: "Enter Username",
                         labelText: "Username",
                       ),
-                      validator: (value){
-                        if(value!.isEmpty){
-                           return "Username cannot ve empty";
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "Username cannot ve empty";
                         }
                         return null;
                       },
@@ -64,12 +61,10 @@ class _LogInPageState extends State<LogInPage> {
                       },
                     ),
                     TextFormField(
-                      validator: (pass){
-                        if(pass!.isEmpty)
-                        {
+                      validator: (pass) {
+                        if (pass!.isEmpty) {
                           return "Password is cannot be empty";
-                        }
-                        else if(pass.length<8) {
+                        } else if (pass.length < 8) {
                           return "Too short password";
                         }
                       },
@@ -96,7 +91,7 @@ class _LogInPageState extends State<LogInPage> {
                             BorderRadius.circular(changedButton ? 30 : 10),
                         child: InkWell(
                           splashColor: Colors.red,
-                          onTap: () =>moveToHome(context),
+                          onTap: () => moveToHome(context),
                           // child: AnimatedContainer(
                           //   duration: Duration(seconds: 1),
                           //   height: 50,
@@ -155,19 +150,15 @@ class _LogInPageState extends State<LogInPage> {
   }
 
   moveToHome(BuildContext context) async {
-
-    if(_formKey.currentState!.validate())
-    {
+    if (_formKey.currentState!.validate()) {
       setState(() {
         changedButton = true;
-        });
-        await Future.delayed(Duration(seconds: 1));
-        await Navigator.pushNamed(
-        context, MyRoutes.homeRoutes);
-        setState(() {
+      });
+      await Future.delayed(Duration(seconds: 1));
+      await Navigator.pushNamed(context, MyRoutes.homeRoutes);
+      setState(() {
         changedButton = false;
-        });
+      });
     }
-        
   }
 }

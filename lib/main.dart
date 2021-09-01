@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // home: LogInPage(),
       // home: HomePage(),
-      // debugShowCheckedModeBanner: false,//for remove debug banner
+      debugShowCheckedModeBanner: false,//for remove debug banner
       // dark Theme
       // themeMode:  ThemeMode.dark,
       // darkTheme: ThemeData(brightness: Brightness.dark),
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(primarySwatch: Colors.indigo)
 
       // ROUTES
-      initialRoute: "/login",
+      initialRoute:  MyRoutes.homeRoutes,
       routes: 
       {
         MyRoutes.loginRoutes: (context)=>LogInPage(),
