@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalog/screens/home_page.dart';
 import 'package:flutter_catalog/screens/login_page.dart';
 import 'package:flutter_catalog/utils/routes.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_catalog/widgets/themes.dart';
+// import 'package:google_fonts/google_fonts.dart';
 // import 'package:flutter_catalog/screens/login_page.dart';
 
 void main() {
@@ -24,12 +25,23 @@ class MyApp extends StatelessWidget {
 
       
        themeMode:  ThemeMode.light,
-        darkTheme: ThemeData
-        (
-          primarySwatch: Colors.indigo,
-          brightness: Brightness.light,
-         fontFamily: GoogleFonts.balooBhai().fontFamily
-        ),
+
+      //  theme: MyThemes.neelamLight(context),
+      theme: MyThemes.neelamLight(context),
+      darkTheme: MyThemes.niralaDark(context),
+       //example
+        // theme: ThemeData
+        // (
+        //   appBarTheme: AppBarTheme(
+        //     // elevation: 0,
+        //     iconTheme: IconThemeData(color: Colors.black),
+        //     textTheme: Theme.of(context).textTheme,
+        //     color: Colors.white,
+        //   ),
+        //   primarySwatch: Colors.indigo,
+        //   brightness: Brightness.light,
+        //  fontFamily: GoogleFonts.balooBhai().fontFamily
+        // ),
 
       //light Theme
       // themeMode: ThemeMode.light,

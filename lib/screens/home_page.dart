@@ -11,12 +11,19 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar
       (
+        //bar color change
+        // backgroundColor: Colors.white,
+        // elevation: 0,
+
+        // iconTheme: IconThemeData(color: Colors.black),
         // toolbarHeight: 200,
         // toolbarOpacity: 1,
         // toolbarTextStyle: ,
         //  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(360)),
         centerTitle: true,
-        title: Text(name),
+        title: Text(name,
+        // style: TextStyle(color: Colors.blue[900]),
+        ),
         // backgroundColor: Colors.teal[900],
         
 
