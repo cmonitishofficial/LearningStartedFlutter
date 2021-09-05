@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
       //  theme: MyThemes.neelamLight(context),
       theme: MyThemes.neelamLight(context),
       darkTheme: MyThemes.niralaDark(context),
+      
        //example
         // theme: ThemeData
         // (

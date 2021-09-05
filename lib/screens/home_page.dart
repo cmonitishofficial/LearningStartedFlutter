@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar
       (
+        
         //bar color change
         // backgroundColor: Colors.white,
         // elevation: 0,
