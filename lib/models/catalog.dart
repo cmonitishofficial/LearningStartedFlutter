@@ -6,7 +6,7 @@ class Item{
   final String color;
   final String image;
 
-  Item({this.id, this.name, this.description, this.price, this.color, this.image});
+  Item({required this.id, required this.name, required this.description, required this.price, required this.color, required this.image});
 }
 
 final products=[
