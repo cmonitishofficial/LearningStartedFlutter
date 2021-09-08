@@ -1,13 +1,13 @@
 class CatalogModel {
-  static final items = [
-    Item(
-        id: 1,
-        name: "Iphone 12max pro",
-        description: "best Phone in this apple series.",
-        price: 999,
-        color: "#fff",
-        image:
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-family-hero?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1604021663000"),
+  static List<Item> items = [
+    // Item(
+    //     id: 1,
+    //     name: "Iphone 12max pro",
+    //     description: "best Phone in this apple series.",
+    //     price: 999,
+    //     color: "#fff",
+    //     image:
+    //         "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-family-hero?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1604021663000"),
     // Item(
     //     id: 1,
     //     name: "Iphone 12max pro",
@@ -130,4 +130,26 @@ class Item {
       required this.price,
       required this.color,
       required this.image});
+
+      factory Item.fromMapNeelam(Map<String,dynamic> map){
+       return Item(
+          id: map["id"],
+          name: map["name"], 
+          description: map["desc"], 
+          price: map["price"], 
+          color: map["color"], 
+          image: map["image"]);
+      }
+
+      // toMap() => {
+      //   "id"=id,
+      //   "name"=name,
+      //   "desc"=description,
+      //   "price"=price,
+      //   "color"=color,
+      //   "image"=image
+
+      // };
+
+      
 }
